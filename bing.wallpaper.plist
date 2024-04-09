@@ -10,7 +10,7 @@
     <array>
         <string>/bin/sh</string>
 		<string>-c</string>
-        <string>~/Code/scripts/bing-wallpaper.sh</string>
+        <string>~/Code/scripts/nasa.sh</string>
     </array>
     <key>StartInterval</key>
     <integer>43200</integer>
