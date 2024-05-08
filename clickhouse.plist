@@ -16,18 +16,18 @@
 	</array>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/clickhouse</string>
+		<string>/opt/homebrew/bin/clickhouse</string>
 		<string>server</string>
 		<string>--config-file</string>
-		<string>/usr/local/etc/clickhouse-server/config.xml</string>
+		<string>/opt/homebrew/etc/clickhouse-server/config.xml</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardErrorPath</key>
-	<string>/usr/local/var/log/clickhouse-server/stderr.log</string>
+	<string>/opt/homebrew/var/log/clickhouse-server/stderr.log</string>
 	<key>StandardOutPath</key>
-	<string>/usr/local/var/log/clickhouse-server/stdout.log</string>
+	<string>/opt/homebrew/var/log/clickhouse-server/stdout.log</string>
 	<key>WorkingDirectory</key>
-	<string>/usr/local/var</string>
+	<string>/opt/homebrew/var</string>
 </dict>
 </plist>

@@ -22,8 +22,8 @@
             [1]: https://github.com/pocoproject/poco/blob/poco-1.9.4-release/Foundation/include/Poco/Logger.h#L105-L114
         -->
         <level>trace</level>
-        <log>/usr/local/var/log/clickhouse-server/clickhouse-server.log</log>
-        <errorlog>/usr/local/var/log/clickhouse-server/clickhouse-server.err.log</errorlog>
+        <log>/opt/homebrew/var/log/clickhouse-server/clickhouse-server.log</log>
+        <errorlog>/opt/homebrew/var/log/clickhouse-server/clickhouse-server.err.log</errorlog>
         <!-- Rotation policy
              See https://github.com/pocoproject/poco/blob/poco-1.9.4-release/Foundation/include/Poco/FileChannel.h#L54-L85
           -->
@@ -441,12 +441,12 @@
     <compiled_expression_cache_elements_size>10000</compiled_expression_cache_elements_size>
 
     <!-- Cache path for custom (created from SQL) cached disks -->
-    <custom_cached_disks_base_directory>/usr/local/var/lib/clickhouse/caches/</custom_cached_disks_base_directory>
+    <custom_cached_disks_base_directory>/opt/homebrew/var/clickhouse/caches/</custom_cached_disks_base_directory>
 
     <validate_tcp_client_information>false</validate_tcp_client_information>
 
     <!-- Path to data directory, with trailing slash. -->
-    <path>/usr/local/var/lib/clickhouse/</path>
+    <path>/opt/homebrew/var/clickhouse/</path>
 
     <!-- Multi-disk configuration example: -->
     <!--
@@ -471,7 +471,7 @@
                 <container_name>container</container_name>
                 <account_name>account</account_name>
                 <account_key>pass123</account_key>
-                <metadata_path>/usr/local/var/lib/clickhouse/disks/blob_storage_disk/</metadata_path>
+                <metadata_path>/opt/homebrew/var/clickhouse/disks/blob_storage_disk/</metadata_path>
                 <skip_access_check>false</skip_access_check>
             </blob_storage_disk>
         </disks>
@@ -499,7 +499,7 @@
 
 
     <!-- Path to temporary data for processing hard queries. -->
-    <tmp_path>/usr/local/var/lib/clickhouse/tmp/</tmp_path>
+    <tmp_path>/opt/homebrew/var/clickhouse/tmp/</tmp_path>
 
     <!-- Disable AuthType plaintext_password and no_password for ACL. -->
     <allow_plaintext_password>1</allow_plaintext_password>
@@ -550,7 +550,7 @@
     <!-- <tmp_policy>tmp</tmp_policy> -->
 
     <!-- Directory with user provided files that are accessible by 'file' table function. -->
-    <user_files_path>/usr/local/var/lib/clickhouse/user_files/</user_files_path>
+    <user_files_path>/opt/homebrew/var/clickhouse/user_files/</user_files_path>
 
     <!-- LDAP server definitions. -->
     <ldap_servers>
@@ -650,7 +650,7 @@
         </users_xml>
         <local_directory>
             <!-- Path to folder where users created by SQL commands are stored. -->
-            <path>/usr/local/var/lib/clickhouse/access/</path>
+            <path>/opt/homebrew/var/clickhouse/access/</path>
         </local_directory>
 
         <!-- To add an LDAP server as a remote user directory of users that are not defined locally, define a single 'ldap' section
@@ -1285,7 +1285,7 @@
         <ttl>event_date + INTERVAL 30 DAY</ttl>
     </blob_storage_log>
 
-    <!-- <top_level_domains_path>/usr/local/var/lib/clickhouse/top_level_domains/</top_level_domains_path> -->
+    <!-- <top_level_domains_path>/opt/homebrew/var/clickhouse/top_level_domains/</top_level_domains_path> -->
     <!-- Custom TLD lists.
          Format: <name>/path/to/file</name>
 
@@ -1461,7 +1461,7 @@
     <!-- Directory in <clickhouse-path> containing schema files for various input formats.
          The directory will be created if it doesn't exist.
       -->
-    <format_schema_path>/usr/local/var/lib/clickhouse/format_schemas/</format_schema_path>
+    <format_schema_path>/opt/homebrew/var/clickhouse/format_schemas/</format_schema_path>
 
     <!-- Directory containing the proto files for the well-known Protobuf types.
       -->
