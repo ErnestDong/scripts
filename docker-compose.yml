@@ -1,0 +1,23 @@
+name: docker-easyconnect
+services:
+    docker-easyconnect:
+        devices:
+            - /dev/net/tun
+        cap_add:
+            - NET_ADMIN
+        tty: true
+        stdin_open: true
+        environment:
+            - PASSWORD=1
+            - URLWIN=1
+            - DISABLE_PKG_VERSION_XML=1
+            - CLIP_TEXT=https://vpn.ncfund.com.cn/
+            - TYPE=x11
+            - DISPLAY=localhost:0
+        volumes:
+            - $HOME/.config/bvpn:/root
+        ports:
+            - 127.0.0.1:5901:5901
+            - 127.0.0.1:1080:1080
+            - 127.0.0.1:8888:8888
+        image: hagb/docker-easyconnect:vncless-7.6.3
