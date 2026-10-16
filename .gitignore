@@ -1,3 +1,9 @@
 CloudRecordings.db
 CloudRecordings.db-shm
 CloudRecordings.db-wal
+我的自选股.xlsx
+.pdm-python
+pdm.lock
+.vscode
+replace_rules.plist
+replace_rules.txt

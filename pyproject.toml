@@ -1,0 +1,20 @@
+[project]
+name = "scripts"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Ernest Dong",email = "dongcy2000@gmail.com"},
+]
+dependencies = ["pandas>=3.0.6", "pypinyin>=0.55.0", "openpyxl>=3.1.5", "tabulate>=0.10.0"]
+requires-python = "==3.15.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
